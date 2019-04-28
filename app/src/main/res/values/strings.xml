@@ -3,4 +3,12 @@
     <string name="import_button">Import response</string>
     <string name="erase_button">Erase response</string>
     <string name="text_test">API - response:</string>
+    <string name="opt_1">Nome - Sigla - Relevância</string>
+    <string name="opt_2">Capital - Região</string>
+    <string name="opt_3">População - Área</string>
+    <string name="opt_4">Moedas</string>
+    <string name="opt_5">Línguas</string>
+    <string name="label_filtros">Filtros de exibição</string>
+    <string name="label_ordenacao">Ordenação</string>
+    <string name="label_mostrar">Mostrar</string>
 </resources>

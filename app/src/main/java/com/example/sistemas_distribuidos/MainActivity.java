@@ -5,10 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 
 import org.json.JSONArray;
-import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -27,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getFromApi(View view) throws IOException {
-        final TextView mTextView = findViewById(R.id.api_response);
-
         URL url = new URL("https://restcountries.eu/rest/v1/all");
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         try {
@@ -44,27 +40,24 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 JSONArray arr = new JSONArray(strFileContents);
-                mTextView.setText(arr.getJSONObject(2).getString("name"));
-                mTextView.setText(Double.toString(arr.getJSONObject(2).getDouble("area")));
+                writeOnScreen(null, arr);
             } catch (Throwable t) {
-                mTextView.setText("Json error");
+                writeOnScreen("Erro no JSON Array", null);
             }
-
-
-            banco(arr);
         } catch (Exception e) {
-            mTextView.setText("Error: " + e);
+            writeOnScreen("Erro no GET", null);
         } finally {
             urlConnection.disconnect();
         }
     }
 
     public void eraseText(View view) {
-        final TextView mTextView = findViewById(R.id.api_response);
-        mTextView.setText("Empty");
+        Log.d("Erase Text");
+//        final TextView mTextView = findViewById(R.id.api_response);
+//        mTextView.setText("Empty");
     }
 
-    public void banco(JSONArray arr) {
-
-    };
+    public void writeOnScreen(String error, JSONArray arr) {
+        Log.d("Write on Screen");
+    }
 }
