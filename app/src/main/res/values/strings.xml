@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sistemas-distribuidos</string>
+    <string name="import_button">Import response</string>
+    <string name="text_test">API - response:</string>
+</resources>
