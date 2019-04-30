@@ -10,5 +10,6 @@
     <string name="opt_5">Línguas</string>
     <string name="label_filtros">Filtros de exibição</string>
     <string name="label_ordenacao">Ordenação</string>
-    <string name="label_mostrar">Mostrar</string>
+    <string name="label_crescente">Crescente</string>
+    <string name="label_decrescente">Decrescente</string>
 </resources>
