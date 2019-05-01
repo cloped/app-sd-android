@@ -8,8 +8,9 @@
     <string name="opt_3">População - Área</string>
     <string name="opt_4">Moedas</string>
     <string name="opt_5">Línguas</string>
+    <string name="opt_6">Somente sul-americanos</string>
     <string name="label_filtros">Filtros de exibição</string>
     <string name="label_ordenacao">Ordenação</string>
-    <string name="label_crescente">Crescente</string>
+    <string name="label_crescente">Sul Americanos</string>
     <string name="label_decrescente">Decrescente</string>
 </resources>
